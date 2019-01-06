@@ -29,6 +29,9 @@ int main() {
 			temp1 = rand() % participants;
 			temp2 = rand() % participants;
 		}
+		else if (give[temp1] == receive[temp2]) {
+			temp2 = rand() % participants;
+		}
 		else if (give[temp1] == MAX) {
 			temp1 = rand() % participants;
 		}
